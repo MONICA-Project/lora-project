@@ -1,0 +1,27 @@
+[submodule "Lora"]
+	path = Lora
+	url = http://git.blubbfish.net/Lora/Lora.git
+[submodule "Lora-Bot"]
+	path = Lora-Bot
+	url = http://git.blubbfish.net/Lora/Lora-Bot.git
+[submodule "Utils/Iot-Interfaces"]
+	path = Utils/Iot-Interfaces
+	url = http://git.blubbfish.net/vs_utils/Iot-Interfaces.git
+[submodule "Utils/Bot-Utils"]
+	path = Utils/Bot-Utils
+	url = http://git.blubbfish.net/vs_utils/Bot-Utils.git
+[submodule "Utils/Utils"]
+	path = Utils/Utils
+	url = http://git.blubbfish.net/vs_utils/Utils.git
+[submodule "Utils/ConnectorDataMqtt"]
+	path = Utils/ConnectorDataMqtt
+	url = http://git.blubbfish.net/vs_utils/ConnectorDataMqtt.git
+[submodule "Utils/Utils-IoT"]
+	path = Utils/Utils-IoT
+	url = http://git.blubbfish.net/vs_utils/Utils-IoT.git
+[submodule "Librarys/litjson"]
+	path = Librarys/litjson
+	url = http://git.blubbfish.net/vs_librarys/litjson.git
+[submodule "Librarys/mqtt"]
+	path = Librarys/mqtt
+	url = http://git.blubbfish.net/vs_librarys/mqtt.git
