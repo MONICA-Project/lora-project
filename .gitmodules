@@ -1,6 +1,6 @@
 [submodule "Lora"]
 	path = Lora
-	url = http://git.blubbfish.net/Lora/Lora.git
+	url = https://gitlab.fit.fraunhofer.de/monica/lora-gateway/lora.git
 [submodule "Lora-Bot"]
 	path = Lora-Bot
 	url = http://git.blubbfish.net/Lora/Lora-Bot.git
