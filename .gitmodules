@@ -1,9 +1,9 @@
 [submodule "Lora"]
 	path = Lora
-	url = https://gitlab.fit.fraunhofer.de/monica/lora-gateway/lora.git
+	url = https://github.com/MONICA-Project/lora.git
 [submodule "Lora-Bot"]
 	path = Lora-Bot
-	url = https://gitlab.fit.fraunhofer.de/monica/lora-gateway/lora-bot.git
+	url = https://github.com/MONICA-Project/lora-bot.git
 [submodule "Utils/Iot-Interfaces"]
 	path = Utils/Iot-Interfaces
 	url = http://git.blubbfish.net/vs_utils/Iot-Interfaces.git
