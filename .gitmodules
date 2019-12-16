@@ -31,3 +31,6 @@
 [submodule "Librarys/RaspberryIO"]
 	path = Librarys/RaspberryIO
 	url = http://git.blubbfish.net/vs_librarys/RaspberryIO.git
+[submodule "Librarys/RaspberryIO_26"]
+	path = Librarys/RaspberryIO_26
+	url = http://git.blubbfish.net/vs_librarys/RaspberryIO_26.git
