@@ -59,6 +59,21 @@ else
 	cd ..
 fi
 
+echo "Pull Librarys/RaspberryIO_26"
+if [ -a Librarys/RaspberryIO_26/.git ] 
+then
+	cd Librarys/RaspberryIO_26
+	git pull
+	cd ..
+	cd ..
+else
+	git submodule update --init --  Librarys/RaspberryIO_26
+	cd Librarys/RaspberryIO_26
+	git checkout master
+	cd ..
+	cd ..
+fi
+
 echo "Pull Lora"
 if [ -a Lora/.git ] 
 then
