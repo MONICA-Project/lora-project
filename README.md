@@ -4,7 +4,6 @@
 Project that contains the Lora library, the Lora-Bot and all its dependencies. This readme is meant for describing the application with all dependencies, see `Deployment` if you want to work with.
 
 <!-- A teaser figure may be added here. It is best to keep the figure small (<500KB) and in the same repo -->
-![Preview](https://raw.githubusercontent.com/MONICA-Project/lora-map/v1.2.10/Lora-Map.jpg)
 
 ## Getting Started
 <!-- Instruction to make the project up and running. -->
@@ -41,15 +40,25 @@ On Windows you can create with `Lora-Bot/Lora-Bot/dpkg/create-Builds.bat` deb fi
 
 #### Linux
 
-[Checkout this repo](#Checkout) and run: `msbuild /p:Configuration="Release" /p:Platform="Any CPU" /p:OutputPath="./bin/Release/" "Lora-Bot/Lora-Bot.sln"`
+[Checkout this repo](#Checkout) and run: `dotnet build Lora-Bot.sln --configuration Release`
 
-You must have `mono-complete`, `libmono-posix4.0-cil` and `wiringpi` installed
+You must have `dotnet-sdk-3.0` installed
 
 If you want to have deb files run `cd Lora-Map/Lora-Map/dpkg` and `bash make-deb.sh armhf` that you can install with `sudo dpkg -i armhf-loramap_x.x-x.deb`
 
 ### Prerequisite
 
-On Windows you need C# Runtime 4.7.2, on linux you need Mono, installation instructions are available [here](https://www.mono-project.com/download/stable/#download-lin-debian). You need only setup apt.
+You need C# .NET Core 3. If you want to install the software on a Raspi, you need the folloing steps.
+* [Download .NET Core Runtime 3.1.0](https://dotnet.microsoft.com/download/dotnet-core/3.1) for ARM32
+```bash
+wget [download link]
+sudo mkdir /usr/share/dotnet
+sudo tar zxf dotnet-runtime-3.1.0-linux-arm.tar.gz -C /usr/share/dotnet
+rm dotnet-runtime-3.1.0-linux-arm.tar.gz
+sudo ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet 
+```
+
+Apt can't check if dotnet is installed, so do it before to avoid that the software will not be run.
 
 If you install the deb packets, it will check and install all dependencies.
 
